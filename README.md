@@ -120,11 +120,10 @@ AWSなどのインフラも、フルスタックエンジニアとしてキャ�
 ゲームサーバーエンジニアとして、ゲームロジックの実装を担当  
 JenkinsによるCI周り、クライアントエンジニアに提供するローカルサーバーツールを提供  
 一部インフラもAWS Cloudformationを利用して構築  
-開発言語は、Python（django）TypeScript(Angular)
+開発言語は、Python（django）TypeScript(Angular)  
 利用ツールは、GitLab Jenkins MySQL Docker を利用  
 AWS環境を利用しつつ、ゲームサーバーを開発した。  
 
-残念ながら、本企画は一度、ペンディングになり新たにつくりなおすことになった。  
 
 ##### 担当業務
 - インフラ設計
