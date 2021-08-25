@@ -79,6 +79,7 @@
   - Aurora
   - DynamoDB
   - Neptune
+  - ElastiCache
   
 - GCP
   - BigQuery
