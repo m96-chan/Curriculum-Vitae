@@ -2,13 +2,14 @@
 
 ## 基本情報
 
-|key|value|
-|---|-----|
-|Name|原田侑亮|
-|Qiita|[yharada](https://qiita.com/yharada)|
-|SlideShare|[Yusuke Harada](https://www.slideshare.net/ssuser19a9df)|
-|SpeakerDeck|[yusukeharada](https://speakerdeck.com/yusukeharada)|
-|GitHub|[m96-chan](https://github.com/m96-chan)|
+|key| value                                                    |
+|---|----------------------------------------------------------|
+|Name| 原田侑亮                                                     |
+|Qiita| [yharada](https://qiita.com/yharada)                     |
+|SlideShare| [Yusuke Harada](https://www.slideshare.net/ssuser19a9df) |
+|SpeakerDeck| [yusukeharada](https://speakerdeck.com/yusukeharada)     |
+|GitHub| [m96-chan](https://github.com/m96-chan)                  |
+|HP| [DEVenus](https://www.devenus.com/)                      |
 
 ## スキル
 
@@ -16,31 +17,32 @@
 
 #### プログラミング言語
 
-|言語名|経験年数|
-|-----|--------|
-|Python|3年以上|
-|Scala|3年以上|
-|Java|1年以上|
-|GoLang|1年未満（技術検証）|
-|PHP|1年以上|
-|C#|3年以上|
-|C++11|1年以上|
-|Swift|1年以上|
-|JavaScript|3年以上|
-|coffeeScript|1年未満|
-|Ruby|1年未満（Chefにより利用）|
-|Solidty|1年未満|
-|VBScript|1年未満|
-|bash/zsh|1年以上|
-|powershell|1年未満|
-|SQL|3年以上|
-|Gremrin|1年未満（技術検証）|
+|言語名| 経験年数            |
+|-----|-----------------|
+|Python| 10年以上           |
+|Scala| 3年以上            |
+|Java| 1年以上            |
+|GoLang| 1年未満（技術検証）      |
+|PHP| 1年以上            |
+|C#| 3年以上            |
+|C++11| 1年以上            |
+|Swift| 1年以上            |
+|JavaScript| 10年以上           |
+|coffeeScript| 1年未満            |
+|Ruby| 1年未満（Chefにより利用） |
+|Solidty| 1年未満            |
+|VBScript| 1年未満            |
+|bash/zsh| 5年以上            |
+|powershell| 1年未満            |
+|SQL| 3年以上            |
+|Gremrin| 1年未満（技術検証）      |
 
 ### フレームワーク
 
 - Python
   - Django
   - Tornado
+  - FastAPI
 - Scala
   - Play Framework
 - PHP
@@ -48,7 +50,7 @@
   - Smarty
 - C#
   - ASP.NET
-  - Unity（※ビルドスクリプトを記載する程度）
+  - Unity（※ビルドスクリプトを記載する程度・VRChatのアバター改変ができる程度）
 - C
 - C++11
   - Cocos2dx
@@ -57,6 +59,7 @@
 - TypeScript
   - Angular
   - Vue.js
+  - Svelte
 - coffeeScript
   - hubot
 - Java
@@ -93,9 +96,16 @@
   - EC2
   - S3
   - SQS
+  - ECS
   
 - GCP
   - BigQuery
+  - AppEngine
+
+- Azure
+  - App Service
+  - コンテナーアプリジョブ
+  - Azure OpenAI
 
 ### その他
 
@@ -140,7 +150,21 @@
 - 機械学習
 
 ## 職務経歴
-### 2021/09 - 現在 合同会社ENJOY
+
+### 2023年/11 - 現在　限会社原田鳳プロジェクト引き継ぎ　有限会社DEVenus 代表取締役就任
+
+SI、DXコンサル企業として、業務変更
+新宿に拠点を移動
+AI案件・3D案件を主軸に活動地ぃうう
+
+主な案件
+- OpenAIを利用して、マッチングアプリの作成
+  - フロント～バックエンド・インフラ作成まで担当
+- WebGLを利用したAIとの面談アプリの作成
+  - フロントエンドの再作成を担当
+- FireStickを利用したWebアプリの作成
+
+### 2021/09 - 2023年/08 合同会社ENJOY
 
 雇われCTOとして、会社の様々なプロダクトに対応・技術検証などを実施
 - Solidty
@@ -156,9 +180,9 @@ Pythonにより、GPUインスタンスEC2を起動して、ECSのように動�
 戦略ピポットにより、ECSにGPUインスタンスを自動アタッチする機能を作成
 インフラや、機能を全体的に把握し、追加する機能などを整備対応
 
-### 2021/08 - 現在 株式会社教育測定研究所
+### 2021/08 - 2023年/11 株式会社教育測定研究所
 
-#### 2021/08 - 現在 プラットフォーム課金周り
+#### 2021/08 - 2023年/11 プラットフォーム課金周り
 
 ブリッジSEとして、プラットフォームの以下、プロダクトのベンダーコントロールを従事
 - 課金（Payment）
@@ -363,3 +387,4 @@ Web調査については、実地と異なることが多いので、経験に�
 2006年　基本情報技術者試験取得  
 2007年　ソフトウェア開発技術者取得  
 2017年　社内エンジニア賞受賞  
+2024年　[東京AI祭](https://www.aisai.tokyo/) AI動画部門銅賞受賞
