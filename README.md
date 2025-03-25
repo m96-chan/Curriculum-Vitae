@@ -17,25 +17,26 @@
 
 #### プログラミング言語
 
-|言語名| 経験年数            |
-|-----|-----------------|
-|Python| 10年以上           |
-|Scala| 3年以上            |
-|Java| 1年以上            |
-|GoLang| 1年未満（技術検証）      |
-|PHP| 1年以上            |
-|C#| 3年以上            |
-|C++11| 1年以上            |
-|Swift| 1年以上            |
-|JavaScript| 10年以上           |
-|coffeeScript| 1年未満            |
-|Ruby| 1年未満（Chefにより利用） |
-|Solidty| 1年未満            |
-|VBScript| 1年未満            |
-|bash/zsh| 5年以上            |
-|powershell| 1年未満            |
-|SQL| 3年以上            |
-|Gremrin| 1年未満（技術検証）      |
+| 言語名          | 経験年数            |
+|--------------|-----------------|
+| Python       | 10年以上           |
+| Scala        | 3年以上            |
+| Java         | 1年以上            |
+| GoLang       | 1年未満（技術検証）      |
+| PHP          | 1年以上            |
+| C#           | 3年以上            |
+| C++11        | 1年以上            |
+| Swift        | 1年以上            |
+| JavaScript   | 10年以上           |
+| TypeScript   | 10年以上           |
+| coffeeScript | 1年未満            |
+| Ruby         | 1年未満（Chefにより利用） |
+| Solidty      | 1年未満            |
+| VBScript     | 1年未満            |
+| bash/zsh     | 5年以上            |
+| powershell   | 1年未満            |
+| SQL          | 3年以上            |
+| Gremrin      | 1年未満（技術検証）      |
 
 ### フレームワーク
 
