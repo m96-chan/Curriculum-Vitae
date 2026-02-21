@@ -1,0 +1,95 @@
+name: Build Resume PDF
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: build-pdf
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      # Install Japanese fonts (with cache)
+      - name: Cache CJK fonts
+        id: cache-fonts
+        uses: actions/cache@v4
+        with:
+          path: /usr/share/fonts/opentype/noto
+          key: fonts-noto-cjk-${{ runner.os }}
+
+      - name: Install Japanese fonts
+        if: steps.cache-fonts.outputs.cache-hit != 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk
+
+      - run: npm ci
+
+      # Install Playwright Chromium (used internally by Vivliostyle)
+      - name: Cache Playwright browsers
+        id: cache-playwright
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install Playwright Chromium
+        if: steps.cache-playwright.outputs.cache-hit != 'true'
+        run: npx playwright install --with-deps chromium
+
+      - name: Install Playwright system deps
+        if: steps.cache-playwright.outputs.cache-hit == 'true'
+        run: npx playwright install-deps chromium
+
+      # Build PDFs
+      - name: Build Japanese Resume
+        run: npm run build:ja
+
+      - name: Build English Resume
+        run: npm run build:en
+
+      # Upload as artifacts
+      - uses: actions/upload-artifact@v4
+        with:
+          name: resume-pdfs
+          path: |
+            Resume_JA.pdf
+            Resume_EN.pdf
+          retention-days: 30
+
+      # Create/update GitHub Release
+      - name: Update latest tag
+        run: |
+          git tag -f latest
+          git push -f origin latest
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: "Resume (Latest)"
+          body: |
+            Automatically generated PDF resumes from the latest `main` branch.
+
+            - **Resume_JA.pdf** — 日本語版職務経歴書
+            - **Resume_EN.pdf** — English Curriculum Vitae
+
+            Updated: ${{ github.event.head_commit.timestamp || github.event.repository.updated_at }}
+          files: |
+            Resume_JA.pdf
+            Resume_EN.pdf
+          make_latest: true

@@ -1,0 +1,155 @@
+/* ===== Page Setup ===== */
+@page {
+  size: A4;
+  margin: 20mm 18mm;
+
+  @bottom-center {
+    content: counter(page);
+    font-size: 8pt;
+    color: #999;
+  }
+}
+
+@page :first {
+  @bottom-center {
+    content: none;
+  }
+}
+
+/* ===== Base Typography ===== */
+:root {
+  --accent: #2563eb;
+  --accent-light: #dbeafe;
+  --border: #d1d5db;
+  --text: #1f2937;
+  --text-light: #6b7280;
+  --bg-stripe: #f9fafb;
+}
+
+body {
+  font-family: "Noto Sans CJK JP", "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", "Meiryo", sans-serif;
+  font-size: 10pt;
+  line-height: 1.65;
+  color: var(--text);
+}
+
+/* ===== Headings ===== */
+h1 {
+  font-size: 18pt;
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 4px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 14pt;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 3px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 12pt;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+h4 {
+  font-size: 10.5pt;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+h5 {
+  font-size: 10pt;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+/* ===== Tables ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9.5pt;
+  margin: 8px 0;
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 4px 8px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Zebra striping */
+tr:nth-child(even) td {
+  background-color: var(--bg-stripe);
+}
+
+/* Key-value tables: first column 25% width */
+table:not(:has(th)) td:first-child,
+table td:first-child {
+  width: 25%;
+  white-space: nowrap;
+}
+
+/* ===== Lists ===== */
+ul,
+ol {
+  padding-left: 1.5em;
+  margin: 4px 0;
+}
+
+li {
+  margin-bottom: 2px;
+}
+
+/* ===== Links ===== */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Page Break Control ===== */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  break-after: avoid;
+}
+
+table {
+  break-inside: avoid;
+}
+
+tr {
+  break-inside: avoid;
+}
+
+/* ===== Utility ===== */
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 16px 0;
+}
+
+code {
+  font-size: 9pt;
+  background-color: #f3f4f6;
+  padding: 1px 4px;
+  border-radius: 3px;
+}

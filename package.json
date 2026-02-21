@@ -1,0 +1,15 @@
+{
+  "name": "curriculum-vitae",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:ja": "vivliostyle build README.md -o Resume_JA.pdf -s A4 --style style/resume.css",
+    "build:en": "vivliostyle build README_EN.md -o Resume_EN.pdf -s A4 --style style/resume.css",
+    "build:all": "npm run build:ja && npm run build:en",
+    "preview:ja": "vivliostyle preview README.md -s A4 --style style/resume.css",
+    "preview:en": "vivliostyle preview README_EN.md -s A4 --style style/resume.css"
+  },
+  "devDependencies": {
+    "@vivliostyle/cli": "^9.0.0"
+  }
+}
