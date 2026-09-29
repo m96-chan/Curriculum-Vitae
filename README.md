@@ -113,6 +113,7 @@
   - ECS
   - Lambda
   - Bedrock
+  - Bedrock AgentCore
   - Amplify
   - Redshift Serverless
   
@@ -170,6 +171,7 @@
 
 - LLM推論エンジンの低レイヤー実装（CUDA/WebGPU/カスタムカーネル）
 - リアルタイムAI音声・映像処理パイプライン
+- V2V（Voice to Voice）音声対話AIの研究開発
 - Rust/C++によるシステムプログラミングとPythonバインディング
 - AI駆動開発（AIDD）の手法確立と実践
 
@@ -181,8 +183,18 @@ SI、DXコンサル企業として、業務変更
 新宿に拠点を移動
 AI案件・3D案件を主軸に活動中
 
+#### 2026/03 - 現在　TOYOTA　V2V（Voice to Voice）AI開発
+
+Ph.D.をもつ研究者と連携し、V2V（音声から音声へ直接変換する）AIの実験プロダクトを多数開発中
+研究サイドの知見をプロダクトに落とし込み、実験サイクルを高速に回す体制を構築
+
+##### 担当業務
+- 研究者（Ph.D.）との連携による実験プロダクトの設計・開発
+- リアルタイム音声処理・推論パイプラインの実装
+
 #### 2025/12 - 現在　A社　リアルタイムAIボイスチャットシステム開発
 
+2026年9月前半に本番リリース完了、現在は運用フェーズ
 PyGPUkit（下回りのGPUライブラリ）開発
 GPUカーネルプログラミングとRUST・C++でGPUスケジューリングとPyTorchより高速な推論実装
 5090のSM120系3090のSM86系のカーネルにてLLM推論作成中
@@ -198,15 +210,19 @@ GPUカーネルプログラミングとRUST・C++でGPUスケジューリング�
 
 #### 2025/10 - 2026/01　株式会社ダイレクトマーケティングエージェンシー　CRMのAIエージェントツール開発
 
-CRMツールのエージェントWidget開発
+AWS環境をゼロからフルスクラッチで構築し、Widget型のCRMチューニングツールを開発
+リリース直後のAmazon Bedrock / Bedrock AgentCoreを採用し、AIエージェント基盤を構築
+Amplify Gen 2 + AWSのAIサービスを組み合わせた高速開発により、期限内に多数の要求・要件を取りまとめ、Redshift連携のCRMツールをリリース
 
 ##### 担当業務
-- AWSインフラ選定
+- AWSインフラ選定・ゼロからの環境構築（フルスクラッチ）
+- 要求・要件定義の取りまとめ
 - 管理ツール・Widget本体・Widgetバックエンド・AgentCore開発すべて
+- Redshift Serverlessとのデータ連携設計
 - CI/CD周りの整備
 
 開発言語は、TypeScript, Python
-利用ツールは、Lambda API, Next.js, React, AWS Bedrock, Redshift Serverless, Amplify Gen 2
+利用ツールは、Lambda API, Next.js, React, AWS Bedrock, Bedrock AgentCore, Redshift Serverless, Amplify Gen 2
 
 #### 2024/09 - 2025/10　A社　人材サービスAIサポートツール作成
 

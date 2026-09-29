@@ -113,6 +113,7 @@
   - ECS
   - Lambda
   - Bedrock
+  - Bedrock AgentCore
   - Amplify
   - Redshift Serverless
 
@@ -170,6 +171,7 @@
 
 - Low-level implementation of LLM inference engines (CUDA / WebGPU / custom kernels)
 - Real-time AI audio & video processing pipelines
+- Research and development of V2V (Voice-to-Voice) conversational AI
 - Systems programming in Rust/C++ with Python bindings
 - Establishing and practicing AI-Driven Development (AIDD) methodologies
 
@@ -181,8 +183,18 @@ Transitioned the business to SI and DX consulting.
 Relocated headquarters to Shinjuku, Tokyo.
 Currently focused on AI and 3D projects.
 
+#### Mar 2026 - Present: TOYOTA — V2V (Voice-to-Voice) AI Development
+
+Collaborating with a Ph.D. researcher to build multiple experimental products for V2V (direct speech-to-speech) AI.
+Translating research findings into working products and establishing a workflow that keeps the experiment cycle fast.
+
+##### Responsibilities
+- Design and development of experimental products in collaboration with a Ph.D. researcher
+- Implementation of real-time speech processing and inference pipelines
+
 #### Dec 2025 - Present: Company A — Real-time AI Voice Chat System Development
 
+Released to production in early September 2026; currently in the operations phase.
 Developing PyGPUkit (low-level GPU library).
 Implementing GPU kernel programming with Rust and C++ for GPU scheduling and inference faster than PyTorch.
 Building LLM inference kernels for RTX 5090 (SM120) and RTX 3090 (SM86) architectures.
@@ -198,15 +210,19 @@ Environment: Windows, Linux (Runpods), FastAPI
 
 #### Oct 2025 - Jan 2026: Direct Marketing Agency Co., Ltd. (株式会社ダイレクトマーケティングエージェンシー) — CRM AI Agent Tool Development
 
-Developed an Agent Widget for a CRM tool.
+Built the AWS environment from scratch and developed a Widget-style CRM tuning tool.
+Adopted Amazon Bedrock / Bedrock AgentCore shortly after its release to build the AI agent platform.
+Combined Amplify Gen 2 with AWS AI services for rapid development, consolidating a large volume of requirements and shipping a Redshift-integrated CRM tool within the deadline.
 
 ##### Responsibilities
-- AWS infrastructure selection
+- AWS infrastructure selection and full from-scratch environment build-out
+- Requirements gathering and consolidation
 - Full development of admin tool, Widget frontend, Widget backend, and AgentCore
+- Data integration design with Redshift Serverless
 - CI/CD pipeline setup
 
 Technologies: TypeScript, Python
-Tools: Lambda API, Next.js, React, AWS Bedrock, Redshift Serverless, Amplify Gen 2
+Tools: Lambda API, Next.js, React, AWS Bedrock, Bedrock AgentCore, Redshift Serverless, Amplify Gen 2
 
 #### Sep 2024 - Oct 2025: Company A — AI Support Tool for HR Services
 
